@@ -12,8 +12,8 @@ export default class Calculator extends React.Component {
         <div className="result">0</div>
         <div className="keyboard">A/C</div>
         <div className="keyboard">+/-</div>
-        <div className="keyboard">Pour</div>
-        <div className="keyboard orange">%</div>
+        <div className="keyboard">%</div>
+        <div className="keyboard orange">÷</div>
         <div className="keyboard">7</div>
         <div className="keyboard">8</div>
         <div className="keyboard">9</div>
