@@ -1,1 +1,40 @@
-/* App */
+.calculator {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.keyboard,
+.result,
+.zero {
+  height: 30px;
+  border: 0.5px solid #cdcdcd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.keyboard {
+  width: 50px;
+  background-color: #e0e0e0;
+}
+
+.result {
+  background-color: #858694;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+}
+
+.zero {
+  background-color: #e0e0e0;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.orange {
+  background-color: #f5913e;
+}
