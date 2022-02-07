@@ -1,4 +1,4 @@
-# React boilerplate
+# Math magicians
 
 > "Math magicians" is a website for all fans of mathematics.
 
@@ -27,7 +27,7 @@ In the project directory, you can run:
 
 `npm install`
 
-Install the app with its dependencies.\
+Install the app with its dependencies.
 
 ### Runs the app in the development mode
 
@@ -42,7 +42,7 @@ You may also see any lint errors in the console.
 
 `npm test`
 
-Launches the test runner in the interactive watch mode.\
+Launches the test runner in the interactive watch mode.
 
 ### Deployment
 
