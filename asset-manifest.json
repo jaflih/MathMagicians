@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ReactBoilerplate/static/css/main.073c9b0a.css",
-    "main.js": "/ReactBoilerplate/static/js/main.e7a3b7f0.js",
-    "static/js/787.4ab27b3c.chunk.js": "/ReactBoilerplate/static/js/787.4ab27b3c.chunk.js",
-    "static/media/logo.svg": "/ReactBoilerplate/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/ReactBoilerplate/index.html",
-    "main.073c9b0a.css.map": "/ReactBoilerplate/static/css/main.073c9b0a.css.map",
-    "main.e7a3b7f0.js.map": "/ReactBoilerplate/static/js/main.e7a3b7f0.js.map",
-    "787.4ab27b3c.chunk.js.map": "/ReactBoilerplate/static/js/787.4ab27b3c.chunk.js.map"
+    "main.css": "/MathMagicians/static/css/main.073c9b0a.css",
+    "main.js": "/MathMagicians/static/js/main.7db617f3.js",
+    "static/js/787.4806e1ff.chunk.js": "/MathMagicians/static/js/787.4806e1ff.chunk.js",
+    "static/media/logo.svg": "/MathMagicians/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/MathMagicians/index.html",
+    "main.073c9b0a.css.map": "/MathMagicians/static/css/main.073c9b0a.css.map",
+    "main.7db617f3.js.map": "/MathMagicians/static/js/main.7db617f3.js.map",
+    "787.4806e1ff.chunk.js.map": "/MathMagicians/static/js/787.4806e1ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.e7a3b7f0.js"
+    "static/js/main.7db617f3.js"
   ]
 }
