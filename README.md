@@ -1,20 +1,23 @@
 # React boilerplate
 
-> One paragraph statement about the project.
+> "Math magicians" is a website for all fans of mathematics.
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+It is a Single Page App (SPA) that allows users to:
+
+- Make simple calculations.
+- Read a random math-related quote.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- React
+- Webpack
+- HTML/CSS/JS
 
 ## Live Demo
 
-[Live Demo Link](https://jihaneh.github.io/)
+[Live Demo Link](https://jihaneh.github.io/MathMagicians/)
 
 ## Getting Started
 
@@ -35,17 +38,17 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### Test
+### Run tests
 
 `npm test`
 
 Launches the test runner in the interactive watch mode.\
 
-### Builds the app for production
+### Deployment
 
 `npm run build`
 
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `build` folder.\
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
