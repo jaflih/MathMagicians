@@ -1,6 +1,7 @@
 import React from 'react';
 import '../logic/operate';
 import calculate from '../logic/calculate';
+import Keyboard from './Keyboard';
 
 class Calculator extends React.Component {
   constructor(props) {
@@ -15,11 +16,9 @@ class Calculator extends React.Component {
 
   handleClick = (event) => {
     this.calculObj = calculate(this.calculObj, event.target.innerText);
-
     this.setState({
-      result: this.calculObj.next === null && this.calculObj.operation === null
-        ? this.calculObj.total
-        : this.calculObj.next,
+      result: (this.calculObj.next === null && this.calculObj.operation === null)
+        ? this.calculObj.total : this.calculObj.next,
     });
   };
 
@@ -31,63 +30,25 @@ class Calculator extends React.Component {
     return (
       <div className="calculator">
         <div className="result">{result}</div>
-        <div className="keyboard" onClick={this.handleClick} onKeyDown={this.handleKeyDown} role="button" tabIndex={-1}>
-          AC
-        </div>
-        <div className="keyboard" onClick={this.handleClick} onKeyDown={this.handleKeyDown} role="button" tabIndex={-1}>
-          +/-
-        </div>
-        <div className="keyboard" onClick={this.handleClick} onKeyDown={this.handleKeyDown} role="button" tabIndex={-1}>
-          %
-        </div>
-        <div className="keyboard orange" onClick={this.handleClick} onKeyDown={this.handleKeyDown} role="button" tabIndex={-1}>
-          ÷
-        </div>
-        <div className="keyboard" onClick={this.handleClick} onKeyDown={this.handleKeyDown} role="button" tabIndex={-1}>
-          7
-        </div>
-        <div className="keyboard" onClick={this.handleClick} onKeyDown={this.handleKeyDown} role="button" tabIndex={-1}>
-          8
-        </div>
-        <div className="keyboard" onClick={this.handleClick} onKeyDown={this.handleKeyDown} role="button" tabIndex={-1}>
-          9
-        </div>
-        <div className="keyboard orange" onClick={this.handleClick} onKeyDown={this.handleKeyDown} role="button" tabIndex={-1}>
-          x
-        </div>
-        <div className="keyboard" onClick={this.handleClick} onKeyDown={this.handleKeyDown} role="button" tabIndex={-1}>
-          4
-        </div>
-        <div className="keyboard" onClick={this.handleClick} onKeyDown={this.handleKeyDown} role="button" tabIndex={-1}>
-          5
-        </div>
-        <div className="keyboard" onClick={this.handleClick} onKeyDown={this.handleKeyDown} role="button" tabIndex={-1}>
-          6
-        </div>
-        <div className="keyboard orange" onClick={this.handleClick} onKeyDown={this.handleKeyDown} role="button" tabIndex={-1}>
-          -
-        </div>
-        <div className="keyboard" onClick={this.handleClick} onKeyDown={this.handleKeyDown} role="button" tabIndex={-1}>
-          1
-        </div>
-        <div className="keyboard" onClick={this.handleClick} onKeyDown={this.handleKeyDown} role="button" tabIndex={-1}>
-          2
-        </div>
-        <div className="keyboard" onClick={this.handleClick} onKeyDown={this.handleKeyDown} role="button" tabIndex={-1}>
-          3
-        </div>
-        <div className="keyboard orange" onClick={this.handleClick} onKeyDown={this.handleKeyDown} role="button" tabIndex={-1}>
-          +
-        </div>
-        <div className="zero" onClick={this.handleClick} onKeyDown={this.handleKeyDown} role="button" tabIndex={-1}>
-          0
-        </div>
-        <div className="keyboard" onClick={this.handleClick} onKeyDown={this.handleKeyDown} role="button" tabIndex={-1}>
-          .
-        </div>
-        <div className="keyboard orange" onClick={this.handleClick} onKeyDown={this.handleKeyDown} role="button" tabIndex={-1}>
-          =
-        </div>
+        <Keyboard value="AC" clickCallback={this.handleClick} keydownCallback={this.handleKeyDown} />
+        <Keyboard value="+/-" clickCallback={this.handleClick} keydownCallback={this.handleKeyDown} />
+        <Keyboard value="%" clickCallback={this.handleClick} keydownCallback={this.handleKeyDown} />
+        <Keyboard classes="keyboard orange" value="÷" clickCallback={this.handleClick} keydownCallback={this.handleKeyDown} />
+        <Keyboard value="7" clickCallback={this.handleClick} keydownCallback={this.handleKeyDown} />
+        <Keyboard value="8" clickCallback={this.handleClick} keydownCallback={this.handleKeyDown} />
+        <Keyboard value="9" clickCallback={this.handleClick} keydownCallback={this.handleKeyDown} />
+        <Keyboard classes="keyboard orange" value="x" clickCallback={this.handleClick} keydownCallback={this.handleKeyDown} />
+        <Keyboard value="4" clickCallback={this.handleClick} keydownCallback={this.handleKeyDown} />
+        <Keyboard value="5" clickCallback={this.handleClick} keydownCallback={this.handleKeyDown} />
+        <Keyboard value="6" clickCallback={this.handleClick} keydownCallback={this.handleKeyDown} />
+        <Keyboard classes="keyboard orange" value="-" clickCallback={this.handleClick} keydownCallback={this.handleKeyDown} />
+        <Keyboard value="1" clickCallback={this.handleClick} keydownCallback={this.handleKeyDown} />
+        <Keyboard value="2" clickCallback={this.handleClick} keydownCallback={this.handleKeyDown} />
+        <Keyboard value="3" clickCallback={this.handleClick} keydownCallback={this.handleKeyDown} />
+        <Keyboard classes="keyboard orange" value="+" clickCallback={this.handleClick} keydownCallback={this.handleKeyDown} />
+        <Keyboard classes="zero" value="0" clickCallback={this.handleClick} keydownCallback={this.handleKeyDown} />
+        <Keyboard value="." clickCallback={this.handleClick} keydownCallback={this.handleKeyDown} />
+        <Keyboard classes="keyboard orange" value="=" clickCallback={this.handleClick} keydownCallback={this.handleKeyDown} />
       </div>
     );
   }
