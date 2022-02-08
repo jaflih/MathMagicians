@@ -1,23 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class Keyboard extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    const {
-      value, classes, clickCallback, keydownCallback,
-    } = this.props;
-    return (
-      <div className={classes} onClick={clickCallback} onKeyDown={keydownCallback} role="button" tabIndex={-1}>
-        {value}
-      </div>
-    );
-  }
-}
+const Keyboard = ({
+  value, classes, clickCallback, keydownCallback,
+}) => (
+  <div className={classes} onClick={clickCallback} onKeyDown={keydownCallback} role="button" tabIndex={-1}>
+    {value}
+  </div>
+);
 
 Keyboard.defaultProps = {
   classes: 'keyboard',
