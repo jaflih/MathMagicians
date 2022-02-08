@@ -16,15 +16,11 @@ class Calculator extends React.Component {
   handleClick = (event) => {
     this.calculObj = calculate(this.calculObj, event.target.innerText);
 
-    if (this.calculObj.next === null && this.calculObj.operation === null) {
-      this.setState({
-        result: this.calculObj.total,
-      });
-    } else {
-      this.setState({
-        result: this.calculObj.next,
-      });
-    }
+    this.setState({
+      result: this.calculObj.next === null && this.calculObj.operation === null
+        ? this.calculObj.total
+        : this.calculObj.next,
+    });
   };
 
   handleKeyDown = () => {};
