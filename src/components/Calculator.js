@@ -1,20 +1,40 @@
 import React from 'react';
 import '../logic/operate';
+import calculate from '../logic/calculate';
 
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      result: 0,
+    };
+    this.calculObj = {};
+    this.handleClick = this.handleClick.bind(this);
+    this.handleKeyDown = this.handleKeyDown.bind(this);
   }
 
-  handleClick = () => {};
+  handleClick = (event) => {
+    this.calculObj = calculate(this.calculObj, event.target.innerText);
+
+    if (this.calculObj.next === null && this.calculObj.operation === null) {
+      this.setState({
+        result: this.calculObj.total,
+      });
+    } else {
+      this.setState({
+        result: this.calculObj.next,
+      });
+    }
+  };
 
   handleKeyDown = () => {};
 
   render() {
+    const { result } = this.state;
+
     return (
       <div className="calculator">
-        <div className="result">0</div>
+        <div className="result">{result}</div>
         <div className="keyboard" onClick={this.handleClick} onKeyDown={this.handleKeyDown} role="button" tabIndex={-1}>
           AC
         </div>
