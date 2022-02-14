@@ -1,11 +1,11 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import Header from '../components/Header';
 
 const NotMatch = () => (
   <>
-    <Navbar />
+    <Header />
     <div>
-      <h3>No match for this page</h3>
+      <h2 className="error">No match for this page</h2>
     </div>
   </>
 );
