@@ -1,9 +1,11 @@
 import React from 'react';
 import Navbar from './Navbar';
 
+import '../css/header.css';
+
 export default function Header() {
   return (
-    <header>
+    <header className="header">
       <h1>
         Math
         {' '}
