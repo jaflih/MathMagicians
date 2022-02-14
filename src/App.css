@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
 .calculator {
   display: grid;
   grid-template-rows: repeat(6, 1fr);
@@ -39,10 +41,26 @@
   background-color: #f5913e;
 }
 
-.navBar {
+header {
   position: fixed;
   top: 0;
   right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 20px;
+  font-size: 30px;
+  color: #f5913e;
+  border: 3px double #f5913e;
+  padding: 10px;
+  font-family: 'Architects Daughter', cursive;
+}
+
+h1 span {
+  color: black;
 }
 
 .links {
@@ -68,4 +86,13 @@
 .links li a.active-style {
   color: #f5913e;
   border-bottom: #f5913e 4px double;
+}
+
+.home {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.home div {
+  margin-bottom: 20px;
 }
