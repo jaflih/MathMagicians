@@ -1,5 +1,11 @@
 import React from 'react';
-import Calculator from './components/Calculator';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+
+import CalculatorContainer from './pages/CalculatorContainer';
+import Quote from './pages/Quote';
+import Home from './pages/Home';
+import NotMatch from './pages/NotMatch';
+
 import './App.css';
 
 export default class App extends React.Component {
@@ -9,6 +15,17 @@ export default class App extends React.Component {
   }
 
   render() {
-    return <Calculator />;
+    return (
+      <>
+        <Router>
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="/calculator" element={<CalculatorContainer />} />
+            <Route path="/quote" element={<Quote />} />
+            <Route path="*" element={<NotMatch />} />
+          </Routes>
+        </Router>
+      </>
+    );
   }
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
 .calculator {
   display: grid;
   grid-template-rows: repeat(6, 1fr);
@@ -37,4 +39,22 @@
 
 .orange {
   background-color: #f5913e;
+}
+
+section {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.calcul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.calcul h2 {
+  margin-right: 20px;
+}
+
+.home div {
+  margin-bottom: 20px;
 }

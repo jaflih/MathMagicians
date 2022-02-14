@@ -1,0 +1,46 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 20px;
+  font-size: 30px;
+  color: #f5913e;
+  border: 3px double #f5913e;
+  padding: 10px;
+  font-family: 'Architects Daughter', cursive;
+}
+
+h1 span {
+  color: black;
+}
+
+.links {
+  display: flex;
+  margin: 20px;
+  list-style: none;
+}
+
+.links li {
+  margin: 10px;
+}
+
+.links li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.links li a:hover {
+  color: #f5913e;
+}
+
+.links li a.active-style {
+  color: #f5913e;
+  border-bottom: #f5913e 4px double;
+}
