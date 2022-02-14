@@ -38,3 +38,34 @@
 .orange {
   background-color: #f5913e;
 }
+
+.navBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.links {
+  display: flex;
+  margin: 20px;
+  list-style: none;
+}
+
+.links li {
+  margin: 10px;
+}
+
+.links li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.links li a:hover {
+  color: #f5913e;
+}
+
+.links li a.active-style {
+  color: #f5913e;
+  border-bottom: #f5913e 4px double;
+}
