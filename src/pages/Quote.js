@@ -1,11 +1,17 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import Header from '../components/Header';
 
 export default function Quote() {
   return (
-    <>
-      <Navbar />
-      <div>Quote</div>
-    </>
+    <section className="quote">
+      <Header />
+      <div>
+        <span className="Lettrine">M</span>
+        athematics is not about numbers, equations, computations, or algorithms : it is about
+        understanding. -
+        {' '}
+        <span className="author">William Paul Thurston</span>
+      </div>
+    </section>
   );
 }

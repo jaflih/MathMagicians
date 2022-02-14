@@ -88,11 +88,22 @@ h1 span {
   border-bottom: #f5913e 4px double;
 }
 
-.home {
+.home,
+.quote {
   font-size: 18px;
   padding: 10px;
 }
 
 .home div {
   margin-bottom: 20px;
+}
+
+.author {
+  color: #f5913e;
+}
+
+.Lettrine {
+  font-family: 'Architects Daughter', cursive;
+  color: #f5913e;
+  font-size: 30px;
 }
