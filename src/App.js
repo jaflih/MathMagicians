@@ -1,10 +1,11 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import CalculatorContainer from './pages/CalculatorContainer';
 import Quote from './pages/Quote';
 import Home from './pages/Home';
 import NotMatch from './pages/NotMatch';
+import Header from './components/Header';
 
 import './App.css';
 
@@ -18,6 +19,7 @@ export default class App extends React.Component {
     return (
       <>
         <Router>
+          <Header />
           <Routes>
             <Route index element={<Home />} />
             <Route path="/calculator" element={<CalculatorContainer />} />
