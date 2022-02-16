@@ -59,6 +59,12 @@ Your app is ready to be deployed!
 - GitHub: [@githubhandle](https://github.com/jihaneH)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/jihanne/)
 
+👤 **Tresor Sawasawa**
+
+- GitHub: [@tresorsawasawa](https://github.com/tresorsawasawa)
+- Twitter: [@tresorsawasawa](https://twitter.com/TresorSawasawa)
+- LinkedIn: [Trésor Sawasawa](https://www.linkedin.com/in/tr%C3%A9sor-sawasawa-43745320b/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
