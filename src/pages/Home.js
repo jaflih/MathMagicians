@@ -1,10 +1,8 @@
 import React from 'react';
-import Header from '../components/Header';
 
 export default function Home() {
   return (
     <section className="home">
-      <Header />
       <h2>Welcome to our page</h2>
       <div>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In placerat leo et nunc blandit
