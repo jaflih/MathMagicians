@@ -16,4 +16,64 @@ describe('Calculator Test', () => {
     const { total } = calculate(inputs, '=');
     expect(total).toBe('7');
   });
+
+  it('Testing the substraction operation', () => {
+    inputs = {
+      total: 5,
+      next: 4,
+      operation: '-',
+    };
+    const { total } = calculate(inputs, '=');
+    expect(total).toBe('1');
+  });
+
+  it('Testing the multiplication operation', () => {
+    inputs = {
+      total: 2,
+      next: 4,
+      operation: 'x',
+    };
+    const { total } = calculate(inputs, '=');
+    expect(total).toBe('8');
+  });
+
+  it('Testing the division operation', () => {
+    inputs = {
+      total: -15,
+      next: 3,
+      operation: '÷',
+    };
+    const { total } = calculate(inputs, '=');
+    expect(total).toBe('-1');
+  });
+
+  it('Testing the modulus operation', () => {
+    inputs = {
+      total: 13,
+      next: 3,
+      operation: '%',
+    };
+    const { total } = calculate(inputs, '=');
+    expect(total).toBe('1');
+  });
+
+  it('Testing the result of +/- button', () => {
+    inputs = {
+      total: 3,
+      next: 23,
+      operation: '-',
+    };
+    const { next } = calculate(inputs, '+/-');
+    expect(next).toBe('-23');
+  });
+
+  it('Testing the AC button', () => {
+    inputs = {
+      total: 5864970675,
+      next: 117880,
+      operation: '+',
+    };
+    const { next } = calculate(inputs, 'AC');
+    expect(next).toBe('0');
+  });
 });
