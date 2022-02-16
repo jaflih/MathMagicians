@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import userEvent from '@testing-library/user-event';
 
@@ -48,12 +48,12 @@ describe('App', () => {
 
   test('Use the calculator with Subtraction ', () => {
     render(<Calculator />);
-    userEvent.click(screen.queryByText('95'));
+    userEvent.click(screen.queryByText('1'));
     userEvent.click(screen.queryByText('-'));
     userEvent.click(screen.queryByText('2'));
     userEvent.click(screen.queryByText('='));
-    expect(screen.getByText('93')).toBeInTheDocument();
-  });\
+    expect(screen.getByText('-1')).toBeInTheDocument();
+  });
 
   test('Use the calculator with Multiplication ', () => {
     render(<Calculator />);
@@ -66,16 +66,17 @@ describe('App', () => {
 
   test('Use the calculator with Division ', () => {
     render(<Calculator />);
-    userEvent.click(screen.queryByText('16'));
+    userEvent.click(screen.queryByText('6'));
+    userEvent.click(screen.queryByText('+/-'));
     userEvent.click(screen.queryByText('÷'));
-    userEvent.click(screen.queryByText('4'));
+    userEvent.click(screen.queryByText('2'));
     userEvent.click(screen.queryByText('='));
-    expect(screen.getByText('4')).toBeInTheDocument();
+    expect(screen.getByText('-3')).toBeInTheDocument();
   });
 
   test('Use the calculator with Modulus ', () => {
     render(<Calculator />);
-    userEvent.click(screen.queryByText('13'));
+    userEvent.click(screen.queryByText('8'));
     userEvent.click(screen.queryByText('%'));
     userEvent.click(screen.queryByText('3'));
     userEvent.click(screen.queryByText('='));

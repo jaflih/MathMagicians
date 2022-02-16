@@ -44,7 +44,7 @@ describe('Calculator Test', () => {
       operation: '÷',
     };
     const { total } = calculate(inputs, '=');
-    expect(total).toBe('-1');
+    expect(total).toBe('-5');
   });
 
   it('Testing the modulus operation', () => {
@@ -69,11 +69,15 @@ describe('Calculator Test', () => {
 
   it('Testing the AC button', () => {
     inputs = {
-      total: 5864970675,
-      next: 117880,
+      total: 1,
+      next: 2,
       operation: '+',
     };
-    const { next } = calculate(inputs, 'AC');
-    expect(next).toBe('0');
+    const next = calculate(inputs, 'AC');
+    expect(next).toEqual({
+      total: null,
+      next: null,
+      operation: null,
+    });
   });
 });
