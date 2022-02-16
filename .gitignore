@@ -6,6 +6,8 @@
 .pnp.js
 .prettierrc
 
+src/__test__/__snapshots__/
+
 # testing
 /coverage
 
