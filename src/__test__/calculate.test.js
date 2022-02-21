@@ -80,4 +80,63 @@ describe('Calculator Test', () => {
       operation: null,
     });
   });
+
+  test('1 + 1 = should return 2', () => {
+    const obj = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+
+    // Step 1 : click on '1'
+    let button = '1';
+
+    let result = {
+      total: null,
+      next: '1',
+    };
+
+    let calculateResult = calculate(obj, button);
+
+    expect(calculateResult).toEqual(result);
+
+    // Step 2 : click on '+'
+    button = '+';
+
+    result = {
+      total: '1',
+      next: null,
+      operation: '+',
+    };
+
+    calculateResult = calculate(calculateResult, button);
+
+    expect(calculateResult).toEqual(result);
+
+    // Step 3 : click on '1'
+    button = '1';
+
+    result = {
+      total: '1',
+      next: '1',
+      operation: '+',
+    };
+
+    calculateResult = calculate(calculateResult, button);
+
+    expect(calculateResult).toEqual(result);
+
+    // Step 4 : click on '='
+
+    button = '=';
+
+    result = {
+      total: '2',
+      next: null,
+      operation: null,
+    };
+
+    calculateResult = calculate(calculateResult, button);
+    expect(calculateResult).toEqual(result);
+  });
 });
