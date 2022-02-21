@@ -19,6 +19,7 @@ It is a Single Page App (SPA) that allows users to:
 
 [Live Demo Link](https://jihaneh.github.io/MathMagicians/)
 [Netlify Link](https://festive-perlman-39446f.netlify.app/)
+[Heroku Link](https://math-magician-mj.herokuapp.com/)
 
 ## Getting Started
 
